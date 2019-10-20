@@ -1,50 +1,60 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<!-- Meta stuff -->
 	<meta charset="utf-8">
+	<meta name="keywords" content="chess">
+	<meta name="description" content="A page about chess. Nothing more, nothing less.">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="content-language" content="en-US">
 	<!-- Linking the external css script -->
 	<link rel="stylesheet" type="text/css" href="scripts/style.css">
 	<style>
-		ul {
-			list-style-type: none;
-			margin: 0;
-			padding: 0;
-			overflow: hidden;
-			background-color: none;
-		}
-		li {
-			float: left;
-		}
-		li a {
-			display: block;
-			color: white;
-			text-align: center;
-			padding: 14px 16px;
-			text-decoration: none;
-		}
-		li a:hover {
-			background-color: #0099cc;
-		}
-	</style>
-	<link rel="icon" type="image/x-icon" href="img/profile.png">
-	<title>Personal Page : Κόφφας Γεώργιος</title>
+		@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+	</style> 
+	<!-- Icon and Title of page on browser -->
+	<link rel="icon" type="image/x-icon" href="img/page-icon.png">
+	<title>The Chess Hub</title>
 </head>
 <body>
-	<div class="menu">
+	<h1 style="text-align:center;font-size:210%;color:#fefdfa;font-family:'Open Sans',sans-serif;"><strong>The Chess Hub</strong></h1>
+	<div class="vertical_menu">
 		<ul>
 			<li><a class="active" href="index.html">Home</a></li>
-			<li><a href="info.html">About Me</a></li>
+			<li><a href="about_site.html">About</a></li>
+			<!--
+			<li><a href="players.html">Chess Masters</a></li>
+			<li><a href="games.html">Games</a></li>
+			-->
+			<li><a href="info.html">Info</a></li>
 			<li><a href="contact.html">Contact</a></li>
 		</ul>
 	</div>
-	<div class="box">
-		<img src="img/my_profile.png" alt="A handsome young man" class="box-img">
-		<h2>Κόφφας Γεώργιος (2389)</h2>
-	</div>
+	<ul>
+		<li style="padding-right: 5%">
+			<div class="news">
+				<h2><u>News</u></h2>
+				<img src="img/coming_soon.jpg" alt="coming soon" class="box-img">
+			</div>
+		</li>
+		<li style="padding-right: 5%">
+			<div class="upcoming-events">
+				<h2><u>Upcoming Events</u></h2>
+				<img src="img/coming_soon.jpg" alt="coming soon" class="box-img">
+			</div>
+		</li>
+		<li>
+			<div class="live-elo-feed">
+				<a href="http://ratings.fide.com/top.phtml" target="iframe-elo" style="padding:0"><h3><u>Live ELO chart</u></h3></a>
+				<iframe src="" name="iframe-elo" style="width:400px;height:auto;border-radius:4%;border:2px solid red"></iframe>
+				
+			</div>
+		</li>
+	</ul>
+	<hr>
 	<div>
 		<footer class="footer" id="foot">
-			<p style="text-align:center;font-size:12px"><small>Department of E-CE, University of Thessaly 2019</small></p>
+			<p style="text-align:center;font-size:12px"><small>&copy;Department of E-CE, University of Thessaly 2019</small></p>
 		</footer>
 	</div>
 </body>

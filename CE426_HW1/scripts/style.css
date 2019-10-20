@@ -1,6 +1,6 @@
 body {
-  	background: url(../img/background.jpg) repeat;
-  	background-size: auto;
+  	background: url(../img/background-chess.jpg) no-repeat;
+  	background-size: cover;
 }
 a {
 	text-decoration: none;
@@ -8,18 +8,123 @@ a {
 }
 h2 {
 	font-family: Georgia;
-	font-size: 25px;
- 	color: white;
+	font-size: 18px;
+ 	color: black;
  	text-align: center;
 }
+h3 {
+	font-family: 
+	font-size: 12px;
+	text-align: center;
+}
 p {
+	color: black;
+ 	font-family: verdana;
+  	font-size: 12px;
+}
+
+.footer p {
 	color: white;
  	font-family: verdana;
   	font-size: 20px;
 }
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: none;
+}
+
+li {
+	float: left;
+}
+
+li a {
+	display: block;
+	background-color: #f2dfd3;
+	color: #013220;
+	text-align: center;
+	padding: 12px;
+	text-decoration: none;
+}
+.vertical_menu {
+	border-radius: 10px;
+	border-style: groove;
+	border-collapse: collapse;
+}
+.vertical_menu a:hover {
+	background-color: #ccc 
+}
+.vertical_menu a.active {
+	background-color: #a7b2aa;
+	color: white;
+}
+
+.news {
+	width: auto;
+	height: 20%;
+	background: #e0ebab;
+	padding: 40px;
+	text-align: center;
+	margin: 15px;
+	margin-top: 5%;
+	font-family: system-ui;
+	color: black;
+	border-radius: 10px;
+}
+.upcoming-events {
+	width: auto;
+	height: 20%;
+	background: #47a589;
+	padding: 40px;
+	text-align: center;
+	margin: 15px;
+	margin-top: 5%;
+	font-family: system-ui;
+	color: black;
+	border-radius: 10px;
+}
+.live-elo-feed {
+	width: auto;
+	height: auto;
+	background: #dfc4c7;
+	padding: 40px;
+	text-align: center;
+	margin: 30px;
+	margin-top: 5%;
+	font-family: system-ui;
+	color: black;
+	border-radius: 10px;
+}
+
+.about {
+	width: auto;
+	background: #e0ebab;
+	padding: 40px;
+	text-align: center;
+	margin: 15px;
+	margin-top: 5%;
+	font-family: system-ui;
+	color: black;
+	border-radius: 10px;
+}
+.about h2 {
+	text-align: left;
+}
+.about p {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 100%;
+	text-align: left;
+
+}
+#about-link {
+	color: blue;
+}
 .box {
 	width: auto;
-	background: rgba(0, 0, 0, 0.4);
+	background: rgba(255, 255, 255, 0.4);
 	padding: 40px;
 	text-align: center;
 	margin: auto;
@@ -29,7 +134,7 @@ p {
 }
 .box-forinfo {
 	width: auto;
-	background: rgba(0, 0, 0, 0.4);
+	background: rgba(255, 255, 255, 0.4);
 	padding: 40px;
 	text-align: center;
 	margin: auto;
@@ -38,18 +143,9 @@ p {
 	color: white;
 }
 .box-img {
-	border-radius: 50%;
+	border-radius: 10%;
 	width: 200px;
 	height: 200px;
-}
-.box h2 {
-	font-size: 30px;
-	letter-spacing: 4px;
-	font-weight: 100;
-}
-.box p {
-	font-size: 17px;
-	text-align: justify;
 }
 .box-icon {
 	border-radius: 50%;
